@@ -1,5 +1,5 @@
 <template>
-  <div class="item">
+  <div class="WelcomeItem item">
     <i>
       <slot name="icon"></slot>
     </i>

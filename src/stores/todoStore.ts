@@ -25,6 +25,7 @@ export const useTodoStore = defineStore('todo', () => {
       text: todos.value.filter(todo => todo.createdVia === 'text').length,
       voice: todos.value.filter(todo => todo.createdVia === 'voice').length,
       image: todos.value.filter(todo => todo.createdVia === 'image').length,
+      location: todos.value.filter(todo => todo.createdVia === 'location').length,
     }
   })
 
@@ -41,6 +42,8 @@ export const useTodoStore = defineStore('todo', () => {
       createdVia: input.createdVia,
       imageUrl: input.imageUrl,
       audioUrl: input.audioUrl,
+      audioDuration: input.audioDuration,
+      location: input.location,
       deviceId: deviceStore.deviceId,
     }
 
