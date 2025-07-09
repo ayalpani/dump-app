@@ -13,7 +13,7 @@ import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 import type { $Location } from '@/types/todo'
 
 // Import Leaflet dynamically to avoid SSR issues
-let L: any = null
+let L: typeof import('leaflet') | null = null
 
 type $Props = {
   location: $Location
@@ -23,7 +23,7 @@ const props = defineProps<$Props>()
 
 const mapContainer = ref<HTMLElement>()
 const mapId = `map-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`
-let map: any = null
+let map: import('leaflet').Map | null = null
 
 const initializeMap = async (): Promise<void> => {
   if (!mapContainer.value) return
@@ -43,6 +43,8 @@ const initializeMap = async (): Promise<void> => {
     await nextTick()
 
     // Create the map
+    if (!L) return
+    
     map = L.map(mapContainer.value, {
       center: [props.location.latitude, props.location.longitude],
       zoom: 15,

@@ -112,7 +112,7 @@
 <script setup lang="ts">
 import { formatDate } from '@/lib/utils'
 import { useTodoStore } from '@/stores/todoStore'
-import Card from '@/components/ui/Card.vue'
+import Card from '@/components/ui/UiCard.vue'
 import AudioPlayer from '@/components/AudioPlayer.vue'
 import LocationCard from '@/components/LocationCard.vue'
 import type { $Todo } from '@/types/todo'

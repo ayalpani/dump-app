@@ -16,8 +16,8 @@
         @keydown="handleKeyDown"
       />
       <div class="flex space-x-2 mt-3">
-        <Button @click="handleSubmit" class="flex-1">Add</Button>
-        <Button variant="outline" @click="handleCancel" class="flex-1">Cancel</Button>
+        <UiButton @click="handleSubmit" class="flex-1">Add</UiButton>
+        <UiButton variant="outline" @click="handleCancel" class="flex-1">Cancel</UiButton>
       </div>
     </Card>
   </div>
@@ -25,8 +25,8 @@
 
 <script setup lang="ts">
 import { ref, watch, nextTick } from 'vue'
-import Card from '@/components/ui/Card.vue'
-import Button from '@/components/ui/Button.vue'
+import Card from '@/components/ui/UiCard.vue'
+import UiButton from '@/components/ui/UiButton.vue'
 
 type $Props = {
   isVisible: boolean

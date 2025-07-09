@@ -1,5 +1,5 @@
 <template>
-  <div :class="cn('Card rounded-lg border bg-card text-card-foreground shadow-sm', className)">
+  <div :class="cn('UiCard rounded-lg border bg-card text-card-foreground shadow-sm', className)">
     <slot />
   </div>
 </template>

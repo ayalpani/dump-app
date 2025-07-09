@@ -3,7 +3,7 @@
     <div class="px-4 py-4 overflow-x-auto scrollbar-hide">
       <div class="flex items-center gap-3 min-w-max">
         <!-- Voice Input Button -->
-        <Button
+        <UiButton
           :variant="isRecording ? 'destructive' : 'outline'"
           size="touch"
           class="flex-shrink-0 min-w-28"
@@ -13,10 +13,10 @@
         >
           <MicIcon :size="20" class="mr-2" />
           {{ isRecording ? 'Stop' : 'Voice' }}
-        </Button>
+        </UiButton>
 
         <!-- Image Input Button -->
-        <Button
+        <UiButton
           variant="outline"
           size="touch"
           class="flex-shrink-0 min-w-28"
@@ -25,10 +25,10 @@
         >
           <CameraIcon :size="20" class="mr-2" />
           Image
-        </Button>
+        </UiButton>
 
         <!-- Location Button -->
-        <Button
+        <UiButton
           variant="outline"
           size="touch"
           class="flex-shrink-0 min-w-28"
@@ -37,10 +37,10 @@
         >
           <LocationIcon :size="20" class="mr-2" />
           Location
-        </Button>
+        </UiButton>
 
         <!-- Text Input Button (always available) -->
-        <Button
+        <UiButton
           variant="default"
           size="touch"
           class="flex-shrink-0 min-w-28"
@@ -49,7 +49,7 @@
         >
           <PlusIcon :size="20" class="mr-2" />
           Text
-        </Button>
+        </UiButton>
       </div>
     </div>
 
@@ -70,7 +70,7 @@ import { ref } from 'vue'
 import { useTodoStore } from '@/stores/todoStore'
 import { useSettingsStore } from '@/stores/settingsStore'
 import { useVoiceRecording } from '@/composables/useVoiceRecording'
-import Button from '@/components/ui/Button.vue'
+import UiButton from '@/components/ui/UiButton.vue'
 
 // Icons
 import MicIcon from '@/components/icons/MicIcon.vue'

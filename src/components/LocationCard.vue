@@ -7,7 +7,7 @@
     
     <!-- Open in Maps button -->
     <div class="mt-2">
-      <Button
+      <UiButton
         @click="handleOpenInMaps"
         @keydown="handleKeyDown"
         variant="secondary"
@@ -17,14 +17,14 @@
         aria-label="Open location in maps"
       >
         Open in Maps
-      </Button>
+      </UiButton>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import LocationMap from '@/components/LocationMap.vue'
-import Button from '@/components/ui/Button.vue'
+import UiButton from '@/components/ui/UiButton.vue'
 import type { $Location } from '@/types/todo'
 
 type $Props = {

@@ -10,7 +10,7 @@
         </div>
       </div>
       
-      <Button
+      <UiButton
         variant="ghost"
         size="icon"
         @click="handleSettingsClick"
@@ -18,7 +18,7 @@
         class="touch-target"
       >
         <SettingsIcon :size="20" />
-      </Button>
+      </UiButton>
     </header>
 
     <!-- Main Content -->
@@ -58,8 +58,8 @@
 import { ref } from 'vue'
 import { useTodoStore } from '@/stores/todoStore'
 import { useSettingsStore } from '@/stores/settingsStore'
-import Button from '@/components/ui/Button.vue'
-import Card from '@/components/ui/Card.vue'
+import UiButton from '@/components/ui/UiButton.vue'
+import Card from '@/components/ui/UiCard.vue'
 import TextInputModal from '@/components/TextInputModal.vue'
 import BottomActionBar from '@/components/BottomActionBar.vue'
 
