@@ -6,10 +6,11 @@
   NODE_VERSION = "20"
 
 [dev]
-  command = "vite"
+  command = "vite --host"
   targetPort = 5173
   port = 8888
   publish = "dist"
+  framework = "#custom"
 
 [[redirects]]
   from = "/*"
