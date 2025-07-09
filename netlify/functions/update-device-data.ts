@@ -48,7 +48,7 @@ const handler: Handler = async (event) => {
     }
 
     const mongoUri = process.env.MONGODB_URI
-    const dbName = process.env.MONGODB_DB_NAME || 'voice_todo_app'
+    const dbName = process.env.MONGODB_DB_NAME || 'dump_app'
 
     if (!mongoUri) {
       return {

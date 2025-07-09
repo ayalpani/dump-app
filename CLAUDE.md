@@ -124,7 +124,7 @@ OPENAI_API_KEY=sk-your-openai-key
 
 # For cloud storage (optional)
 MONGODB_URI=mongodb://connection-string
-MONGODB_DB_NAME=voice_todo_app
+MONGODB_DB_NAME=dump_app
 ```
 
 ### Development Modes

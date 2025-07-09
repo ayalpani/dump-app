@@ -54,7 +54,7 @@ Edit `.env` with your values:
 ```env
 OPENAI_API_KEY=your_openai_api_key_here
 MONGODB_URI=your_mongodb_connection_string_here
-MONGODB_DB_NAME=voice_todo_app
+MONGODB_DB_NAME=dump_app
 ```
 
 4. Run development server:
@@ -75,7 +75,7 @@ Set these in your Netlify dashboard under Site Settings > Environment Variables:
 
 - `OPENAI_API_KEY` - Your OpenAI API key for Whisper
 - `MONGODB_URI` - MongoDB connection string
-- `MONGODB_DB_NAME` - Database name (default: voice_todo_app)
+- `MONGODB_DB_NAME` - Database name (default: dump_app)
 
 ### Build Settings
 
